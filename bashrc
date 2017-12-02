@@ -3,13 +3,6 @@ source ~/.aliases
 export EDITOR='vim'
 
 #
-# If we have boxen installed, source the Boxen environment
-#
-if [ -f /opt/boxen/env.sh ]; then
-  source /opt/boxen/env.sh
-fi
-
-#
 # Add bash_autocompletion for brew
 #
 if type brew &>/dev/null && [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -23,15 +16,17 @@ if type rbenv &>/dev/null; then
   eval "$(rbenv init -)"
 fi
 
+
+# PostgreSQL
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
 #
 # Load __git_ps1 function to add current branch to the PS1
 # This may exist in different places depending on the version
 # of Git installed and the method of which it was installed,
 # so fallback to each one in turn.
 #
-if [ -f /opt/boxen/homebrew/etc/bash_completion.d/git-prompt.sh ]; then
-  source /opt/boxen/homebrew/etc/bash_completion.d/git-prompt.sh
-elif [ -f /usr/share/git-core/git-prompt.sh ]; then
+if [ -f /usr/share/git-core/git-prompt.sh ]; then
   source /usr/share/git-core/git-prompt.sh
 elif [ -f /etc/bash_completion.d/git ]; then
   source /etc/bash_completion.d/git
