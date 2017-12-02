@@ -16,7 +16,6 @@ if type rbenv &>/dev/null; then
   eval "$(rbenv init -)"
 fi
 
-
 # PostgreSQL
 export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 

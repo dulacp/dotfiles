@@ -46,11 +46,10 @@
 [push]
     default = simple
 
-[credential]
-helper = /opt/boxen/bin/boxen-git-credential
-
 [hub]
     protocol = https
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[url "https://"]
+	insteadOf = git://
