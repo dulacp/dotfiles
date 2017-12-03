@@ -31,6 +31,10 @@ setopt HIST_REDUCE_BLANKS
 #   like: git comm-[tab]
 setopt complete_aliases
 
+# Jump until a non-alphanumeric char with alt+left or alt+right
+autoload -U select-word-style
+select-word-style bash
+
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word
 bindkey '^[[5D' beginning-of-line
