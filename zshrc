@@ -49,4 +49,4 @@ stty -ixon
 # ZSH uses compinit to initialize completion for the current session. 
 # To speed up the running of compinit, it can be made to produce a 
 # dumped configuration which will be read in on future invocations.
-rm -f $HOME/.zcompdump*
+rm -rf $HOME/.zcompdump*
