@@ -1,0 +1,5 @@
+# Directory alias created by `$ make install`
+bin/bin
+functions/functions
+vim/vim
+zsh/zsh
