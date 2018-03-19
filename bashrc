@@ -2,6 +2,16 @@ source ~/.aliases
 
 export EDITOR='vim'
 
+# Python PATH
+export PATH="`brew --prefix`/opt/python/libexec/bin:$PATH"
+
+# Python virtualenv wrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+export VIRTUALENVWRAPPER_PYTHON=$(which python)
+export VIRTUALENVWRAPPER_VIRTUALENV=`brew --prefix`/bin/virtualenv
+source `brew --prefix`/bin/virtualenvwrapper.sh
+
 #
 # Add bash_autocompletion for brew
 #
