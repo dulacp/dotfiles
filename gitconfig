@@ -53,3 +53,5 @@
 	smudge = git-media-smudge %f
 [url "https://"]
 	insteadOf = git://
+[http]
+	cookiefile = /Users/dulacp/.gitcookies
