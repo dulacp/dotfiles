@@ -2,6 +2,9 @@ source ~/.aliases
 
 export EDITOR='vim'
 
+# Add dotfiles bin path
+export PATH="$PATH:$HOME/.bin"
+
 # Python PATH
 export PATH="`brew --prefix`/opt/python/libexec/bin:$PATH"
 

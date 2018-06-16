@@ -6,6 +6,9 @@ then
   source $HOME/.localrc
 fi
 
+# add PATH to binaries
+export PATH="$PATH:$HOME/.bin"
+
 # all of our zsh files
 typeset -U config_files
 config_files=($HOME/.zsh/*.zsh)
