@@ -58,3 +58,12 @@ stty -ixon
 # To speed up the running of compinit, it can be made to produce a 
 # dumped configuration which will be read in on future invocations.
 rm -rf $HOME/.zcompdump*
+
+
+# pnpm
+export PNPM_HOME="/home/dulacp/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
