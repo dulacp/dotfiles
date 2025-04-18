@@ -6,6 +6,8 @@ then
   source $HOME/.localrc
 fi
 
+source $HOME/.aliases
+
 # add PATH to binaries
 export PATH="$PATH:$HOME/.bin"
 
