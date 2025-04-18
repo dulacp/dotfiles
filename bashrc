@@ -5,23 +5,6 @@ export EDITOR='vim'
 # Add dotfiles bin path
 export PATH="$PATH:$HOME/.bin"
 
-# Python PATH
-export PATH="`brew --prefix`/opt/python/libexec/bin:$PATH"
-
-# Python virtualenv wrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-export VIRTUALENVWRAPPER_PYTHON=$(which python)
-export VIRTUALENVWRAPPER_VIRTUALENV=`brew --prefix`/bin/virtualenv
-source `brew --prefix`/bin/virtualenvwrapper.sh
-
-#
-# Add bash_autocompletion for brew
-#
-if type brew &>/dev/null && [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
-
 #
 # If rbenv is installed, enable shims and autocompletion
 #
