@@ -12,9 +12,6 @@ if type rbenv &>/dev/null; then
   eval "$(rbenv init -)"
 fi
 
-# PostgreSQL
-export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
-
 #
 # Load __git_ps1 function to add current branch to the PS1
 # This may exist in different places depending on the version
